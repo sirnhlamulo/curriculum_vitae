@@ -42,8 +42,42 @@
                         </div>
 
                         <!-- Form content  -->
-                         
+                        <div class = "cv-form-row cv-form-row-about">
+                            <div class = "cols-3">
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">First Name</label>
+                                    <input name = "firstname" type = "text" class = "form-control firstname" id = "" onkeyup="generateCV()" placeholder="e.g. John">
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Middle Name <span class = "opt-text">(optional)</span></label>
+                                    <input name = "middlename" type = "text" class = "form-control middlename" id = "" onkeyup="generateCV()" placeholder="e.g. Herbert">
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Last Name</label>
+                                    <input name = "lastname" type = "text" class = "form-control lastname" id = "" onkeyup="generateCV()" placeholder="e.g. Doe">
+                                    <span class="form-text"></span>
+                                </div>
+                            </div>
 
+                            <!-- Content columns  -->
+                            <div class="cols-3">
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Your Image</label>
+                                    <input name = "image" type = "file" class = "form-control image" id = "" accept = "image/*" onchange="previewImage()">
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Designation</label>
+                                    <input name = "designation" type = "text" class = "form-control designation" id = "" onkeyup="generateCV()" placeholder="e.g. Sr.Accountants">
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Address</label>
+                                    <input name = "address" type = "text" class = "form-control address" id = "" onkeyup="generateCV()" placeholder="e.g. Lake Street-23">
+                                    <span class="form-text"></span>
+                                </div>
+                            </div>
                     </div>
                 </form></div></div>
     </section>
