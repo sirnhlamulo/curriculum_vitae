@@ -16,8 +16,8 @@
             <div class = "navbar-content">
                 <div class = "brand-and-toggler">
                     <a href = "index.html" class = "navbar-brand">
-                        <img src = "assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
-                        <span class = "navbar-brand-text">build <span>resume.</span>
+                        <img src = "assets/img/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
+                        <span class = "navbar-brand-text">build <span>resume</span>
                     </a>
                     <button type = "button" class = "navbar-toggler-btn">
                         <div class = "bars">
@@ -65,7 +65,7 @@
                             <div class="cols-3">
                                 <div class = "form-elem">
                                     <label for = "" class = "form-label">Your Image</label>
-                                    <input name = "image" type = "file" class = "form-control image" id = "" accept = "image/*" onchange="previewImage()">
+                                    <input name = "image" type = "file" class = "form-control image" id = "" accept = "img/*" onchange="previewImage()">
                                 </div>
                                 <div class = "form-elem">
                                     <label for = "" class = "form-label">Designation</label>
@@ -78,8 +78,40 @@
                                     <span class="form-text"></span>
                                 </div>
                             </div>
+
+                            <!-- content form elements -->
+                            <div class = "cols-3">
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Email</label>
+                                    <input name = "email" type = "text" class = "form-control email" id = "" onkeyup="generateCV()" placeholder="e.g. johndoe@gmail.com">
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Phone No:</label>
+                                    <input name = "phoneno" type = "text" class = "form-control phoneno" id = "" onkeyup="generateCV()" placeholder="e.g. 456-768-798, 567.654.002">
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Summary</label>
+                                    <input name = "summary" type = "text" class = "form-control summary" id = "" onkeyup="generateCV()" placeholder="e.g. Doe">
+                                    <span class="form-text"></span>
+                                </div>
+                            </div>
+
+                            <!-- Achievements section -->
+                            <div class="cv-form-blk">
+                                <div class = "cv-form-row-title">
+                                    <h3>Achievements</h3>
+                                </div>
+                                
+                                
+                            </div>  
+                            
+                        </div>
                     </div>
-                </form></div></div>
+                </form>
+            </div>
+        </div>
     </section>
     <!-- Preview section -->
      <section id = "preview-sc" class = "print-btn-sc">
