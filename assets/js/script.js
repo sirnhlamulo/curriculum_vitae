@@ -296,3 +296,13 @@ function validateFormData(elem, elemType, elemName) {
     else removeErrMsg(elem);
   }
 }
+
+// adding the invalid text
+function addErrMsg(formElem, formElemName) {
+  formElem.nextElementSibling.innerHTML = `${formElemName} is invalid`;
+}
+
+// removing the invalid text
+function removeErrMsg(formElem) {
+  formElem.nextElementSibling.innerHTML = "";
+}
