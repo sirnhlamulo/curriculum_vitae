@@ -43,3 +43,22 @@ let nameDsp = document.getElementById("fullname_dsp"),
   educationsDsp = document.getElementById("educations_dsp"),
   experiencesDsp = document.getElementById("experiences_dsp");
 
+// first value is for the attributes and second one passes the nodelists
+const fetchValues = (attrs, ...nodeLists) => {
+  let elemsAttrsCount = nodeLists.length;
+  let elemsDataCount = nodeLists[0].length;
+  let tempDataArr = [];
+
+  // first loop deals with the no of repeaters value
+  for (let i = 0; i < elemsDataCount; i++) {
+    let dataObj = {}; // creating an empty object to fill the data
+    // second loop fetches the data for each repeaters value or attributes
+    for (let j = 0; j < elemsAttrsCount; j++) {
+      // setting the key name for the object and fill it with data
+      dataObj[`${attrs[j]}`] = nodeLists[j][i].value;
+    }
+    tempDataArr.push(dataObj);
+  }
+
+  return tempDataArr;
+};
