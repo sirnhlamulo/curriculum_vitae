@@ -12,7 +12,7 @@ Tech Stack:
 - [Responsive Html Code](https://www.w3schools.com/html/)
 - [CDNJS - remix 4.2.0](https://cdnjs.com/libraries/remixicon/4.2.0)
 - [Validation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
-- [Photopea]()
+- [Photopea](https://www.photopea.com/)
 
 
-![preview img](assets\img\dublin-resume-templates.jpg)
+![preview img]()
