@@ -306,3 +306,20 @@ function addErrMsg(formElem, formElemName) {
 function removeErrMsg(formElem) {
   formElem.nextElementSibling.innerHTML = "";
 }
+// show the list data
+const showListData = (listData, listContainer) => {
+  listContainer.innerHTML = "";
+  listData.forEach((listItem) => {
+    let itemElem = document.createElement("div");
+    itemElem.classList.add("preview-item");
+
+    for (const key in listItem) {
+      let subItemElem = document.createElement("span");
+      subItemElem.classList.add("preview-item-val");
+      subItemElem.innerHTML = `${listItem[key]}`;
+      itemElem.appendChild(subItemElem);
+    }
+
+    listContainer.appendChild(itemElem);
+  });
+};
