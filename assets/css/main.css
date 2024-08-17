@@ -265,3 +265,35 @@ F .fs-23 {
 .btn-group a:first-child {
   margin-right: 1rem !important;
 }
+
+
+/* navbar */
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+}
+
+.navbar .container{
+    width: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+}
+.navbar-brand-text{
+    color: var(--clr-dark);
+    font-weight: 600;
+}
+.navbar-brand-text span{
+    color: var(--clr-blue);
+}
+.navbar-brand-icon{
+    width: 25px;
+    margin-right: 6px;
+    opacity: 0.8;
+}
