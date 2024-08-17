@@ -358,3 +358,35 @@ F .fs-23 {
 .section-one-r .btn-group {
   margin-top: 3rem;
 }
+
+/* section two */
+.section-two {
+  padding: 64px 0;
+}
+.section-two .section-items {
+  display: grid;
+  gap: 2rem;
+}
+
+.section-two .section-item {
+  max-width: 350px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-two .section-item-icon {
+  margin: 1rem 0;
+}
+.section-two .section-item-icon img {
+  width: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-two .section-item-title {
+  color: var(--clr-blue-dark);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.section-two .text {
+  margin: 0.9rem 0;
+}
