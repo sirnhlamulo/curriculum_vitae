@@ -390,3 +390,14 @@ F .fs-23 {
 .section-two .text {
   margin: 0.9rem 0;
 }
+
+/* footer */
+.footer {
+  padding: 3rem 0;
+}
+.footer-content p {
+  color: var(--clr-grey);
+}
+.footer-content p span {
+  color: var(--clr-white);
+}
