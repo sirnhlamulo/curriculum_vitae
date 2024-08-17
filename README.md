@@ -15,4 +15,4 @@ Tech Stack:
 - [Photopea](https://www.photopea.com/)
 
 
-![preview img]()
+![preview img](\assets\img\dublin-resume-templates.jpg)
