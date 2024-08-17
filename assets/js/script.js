@@ -62,3 +62,202 @@ const fetchValues = (attrs, ...nodeLists) => {
 
   return tempDataArr;
 };
+
+const getUserInputs = () => {
+  // achivements
+  let achievementsTitleElem = document.querySelectorAll(".achieve_title"),
+    achievementsDescriptionElem = document.querySelectorAll(
+      ".achieve_description"
+    );
+
+  // experiences
+  let expTitleElem = document.querySelectorAll(".exp_title"),
+    expOrganizationElem = document.querySelectorAll(".exp_organization"),
+    expLocationElem = document.querySelectorAll(".exp_location"),
+    expStartDateElem = document.querySelectorAll(".exp_start_date"),
+    expEndDateElem = document.querySelectorAll(".exp_end_date"),
+    expDescriptionElem = document.querySelectorAll(".exp_description");
+
+  // education
+  let eduSchoolElem = document.querySelectorAll(".edu_school"),
+    eduDegreeElem = document.querySelectorAll(".edu_degree"),
+    eduCityElem = document.querySelectorAll(".edu_city"),
+    eduStartDateElem = document.querySelectorAll(".edu_start_date"),
+    eduGraduationDateElem = document.querySelectorAll(".edu_graduation_date"),
+    eduDescriptionElem = document.querySelectorAll(".edu_description");
+
+  let projTitleElem = document.querySelectorAll(".proj_title"),
+    projLinkElem = document.querySelectorAll(".proj_link"),
+    projDescriptionElem = document.querySelectorAll(".proj_description");
+
+  let skillElem = document.querySelectorAll(".skill");
+
+  // event listeners for form validation
+  firstnameElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.TEXT, "First Name")
+  );
+  middlenameElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.TEXT_EMP, "Middle Name")
+  );
+  lastnameElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.TEXT, "Last Name")
+  );
+  phonenoElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.PHONENO, "Phone Number")
+  );
+  emailElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.EMAIL, "Email")
+  );
+  addressElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.ANY, "Address")
+  );
+  designationElem.addEventListener("keyup", (e) =>
+    validateFormData(e.target, validType.TEXT, "Designation")
+  );
+
+  achievementsTitleElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Title")
+    )
+  );
+  achievementsDescriptionElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Description")
+    )
+  );
+  expTitleElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Title")
+    )
+  );
+  expOrganizationElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Organization")
+    )
+  );
+  expLocationElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Location")
+    )
+  );
+  expStartDateElem.forEach((item) =>
+    item.addEventListener("blur", (e) =>
+      validateFormData(e.target, validType.ANY, "End Date")
+    )
+  );
+  expEndDateElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "End Date")
+    )
+  );
+  expDescriptionElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Description")
+    )
+  );
+  eduSchoolElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "School")
+    )
+  );
+  eduDegreeElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Degree")
+    )
+  );
+  eduCityElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "City")
+    )
+  );
+  eduStartDateElem.forEach((item) =>
+    item.addEventListener("blur", (e) =>
+      validateFormData(e.target, validType.ANY, "Start Date")
+    )
+  );
+  eduGraduationDateElem.forEach((item) =>
+    item.addEventListener("blur", (e) =>
+      validateFormData(e.target, validType.ANY, "Graduation Date")
+    )
+  );
+  eduDescriptionElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Description")
+    )
+  );
+  projTitleElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Title")
+    )
+  );
+  projLinkElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Link")
+    )
+  );
+  projDescriptionElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "Description")
+    )
+  );
+  skillElem.forEach((item) =>
+    item.addEventListener("keyup", (e) =>
+      validateFormData(e.target, validType.ANY, "skill")
+    )
+  );
+
+  return {
+    firstname: firstnameElem.value,
+    middlename: middlenameElem.value,
+    lastname: lastnameElem.value,
+    designation: designationElem.value,
+    address: addressElem.value,
+    email: emailElem.value,
+    phoneno: phonenoElem.value,
+    summary: summaryElem.value,
+    achievements: fetchValues(
+      ["achieve_title", "achieve_description"],
+      achievementsTitleElem,
+      achievementsDescriptionElem
+    ),
+    experiences: fetchValues(
+      [
+        "exp_title",
+        "exp_organization",
+        "exp_location",
+        "exp_start_date",
+        "exp_end_date",
+        "exp_description",
+      ],
+      expTitleElem,
+      expOrganizationElem,
+      expLocationElem,
+      expStartDateElem,
+      expEndDateElem,
+      expDescriptionElem
+    ),
+    educations: fetchValues(
+      [
+        "edu_school",
+        "edu_degree",
+        "edu_city",
+        "edu_start_date",
+        "edu_graduation_date",
+        "edu_description",
+      ],
+      eduSchoolElem,
+      eduDegreeElem,
+      eduCityElem,
+      eduStartDateElem,
+      eduGraduationDateElem,
+      eduDescriptionElem
+    ),
+    projects: fetchValues(
+      ["proj_title", "proj_link", "proj_description"],
+      projTitleElem,
+      projLinkElem,
+      projDescriptionElem
+    ),
+    skills: fetchValues(["skill"], skillElem),
+  };
+};
