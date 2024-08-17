@@ -401,3 +401,31 @@ F .fs-23 {
 .footer-content p span {
   color: var(--clr-white);
 }
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  .section-two .section-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-one-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+  .section-one-r {
+    text-align: left;
+  }
+  .section-two .section-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-two .section-item {
+    text-align: left;
+  }
+  .section-two .section-item-icon img {
+    margin-left: 0;
+  }
+}
+
