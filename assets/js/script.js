@@ -323,3 +323,19 @@ const showListData = (listData, listContainer) => {
     listContainer.appendChild(itemElem);
   });
 };
+
+// Display userData
+const displayCV = (userData) => {
+  nameDsp.innerHTML =
+    userData.firstname + " " + userData.middlename + " " + userData.lastname;
+  phonenoDsp.innerHTML = userData.phoneno;
+  emailDsp.innerHTML = userData.email;
+  addressDsp.innerHTML = userData.address;
+  designationDsp.innerHTML = userData.designation;
+  summaryDsp.innerHTML = userData.summary;
+  showListData(userData.projects, projectsDsp);
+  showListData(userData.achievements, achievementsDsp);
+  showListData(userData.skills, skillsDsp);
+  showListData(userData.educations, educationsDsp);
+  showListData(userData.experiences, experiencesDsp);
+};
