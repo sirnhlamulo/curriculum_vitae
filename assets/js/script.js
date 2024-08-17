@@ -7,3 +7,12 @@ const phoneRegex =
 /* supports following number formats - (123) 456-7890, (123)456-7890, 123-456-7890, 123.456.7890, 1234567890, +31636363634, 075-63546725 */
 const digitRegex = /^\d+$/;
 
+const mainForm = document.getElementById("cv-form");
+const validType = {
+  TEXT: "text",
+  TEXT_EMP: "text_emp",
+  EMAIL: "email",
+  DIGIT: "digit",
+  PHONENO: "phoneno",
+  ANY: "any",
+};
