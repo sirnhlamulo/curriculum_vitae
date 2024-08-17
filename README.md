@@ -1,6 +1,6 @@
 # Responsive Online Curriculumn Vitae Builer
 
-### Make your network your networth with this front-end template.
+### Make your network your networth with this curriculum-vitae builder
 
 - Responsive Personal Website CV builder Design Using HTML CSS And JavaScript
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
@@ -14,5 +14,7 @@ Tech Stack:
 - [Validation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
 - [Photopea](https://www.photopea.com/)
 
-
-![preview img](assets/img/dublin-resume-templates.jpg)
+### Create your CV with a Resume builder
+![preview img](assets/img/resources/cv.png)
+### Print Your CV
+![preview img](assets/img/resources/dublin-resume-templates.jpg)
